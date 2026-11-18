@@ -104,7 +104,7 @@ def get_js_unicom_source(data):
         if response.status_code == 200:
             # 解析JSON数据
             play_data = response.json()
-            playUrl_real = play_data['u']
+            playUrl_real = play_data['data'][0]['url']
             pass
 
         # 获取 group 信息
